@@ -1,0 +1,624 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#lo {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(90, 82, 82), rgb(173, 173, 191));
+}
+
+#tom {
+    display: none;
+    width: 50%;
+    height: 70%;
+    background-color: rgb(83, 77, 77);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    border: solid;
+}
+
+#tom {
+    border-radius: 10% 30% 10% 40%;
+}
+
+
+.spinner {
+    transform: translate(-50%, -50%);
+    left: 8%;
+    top: 8%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: morph 2000ms infinite;
+}
+
+@keyframes morph {
+
+    0%,
+    100% {
+        border-radius: 0%;
+        transform: rotate (0deg);
+        background-color: rgb(64, 0, 201)
+    }
+
+    50% {
+        border-radius: 50%;
+        transform: rotate(180deg);
+        background-color: rgb(255, 0, 0)
+    }
+}
+
+#tom2 {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 40%;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 2px solid;
+}
+
+#SUBMIT {
+    position: relative;
+    height: 15%;
+    width: 30%;
+    bottom: 45%;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: rgb(216, 212, 212);
+}
+
+#cancel {
+    position: relative;
+    left: 80%;
+    top: 90%;
+    width: 15%;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+
+#form01 {
+    position: relative;
+    width: 30%;
+    height: 30%;
+    left: 10%;
+    top: 2%;
+}
+
+#firstname {
+    font-size: 15px;
+    font-family: system-ui;
+}
+
+#input1 {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    height: 40%;
+}
+
+#form02 {
+    position: relative;
+    width: 30%;
+    height: 30%;
+    left: 55%;
+    top: -28%;
+}
+
+#lastname {
+    font-size: 15px;
+    font-family: system-ui;
+}
+
+#input2 {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    height: 40%;
+}
+
+#form03 {
+    position: relative;
+    width: 75%;
+    height: 30%;
+    left: 10%;
+    top: -35%;
+}
+
+#Email {
+    font-size: 15px;
+    font-family: system-ui;
+}
+
+#input3 {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    height: 40%;
+}
+
+#form04 {
+    position: relative;
+    width: 75%;
+    height: 30%;
+    left: 10%;
+    top: -43%;
+}
+
+#Username {
+    font-size: 15px;
+    font-family: system-ui;
+}
+
+#input4 {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    height: 40%;
+}
+
+
+#form05 {
+    position: relative;
+    width: 75%;
+    height: 30%;
+    left: 10%;
+    top: -50%;
+}
+
+#Password {
+    font-size: 15px;
+    font-family: system-ui;
+}
+
+#input5 {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    height: 40%;
+}
+
+#tom3 {
+    display: none;
+    width: 50%;
+    height: 70%;
+    background-color: rgb(83, 77, 77);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    border: solid;
+    border-radius: 10% 30% 10% 40%;
+}
+
+#tom4 {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 45%;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 2px solid;
+    z-index: 99;
+}
+
+#form0102 {
+    position: relative;
+    width: 75%;
+    height: 30%;
+    left: 10%;
+    top: 2%;
+}
+
+#Email01 {
+    font-size: 15px;
+    font-family: system-ui;
+}
+
+#input01 {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    height: 40%;
+}
+
+
+#form0202 {
+    position: relative;
+    width: 75%;
+    height: 30%;
+    left: 10%;
+    top: -3%;
+}
+
+#Password02 {
+    font-size: 15px;
+    font-family: system-ui;
+}
+
+#input02 {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    height: 40%;
+}
+
+
+#or {
+    font-size: 15px;
+    position: relative;
+    left: 45%;
+    top: -7%;
+
+}
+
+#facebook {
+    top: -4%;
+    width: 60%;
+    height: 10%;
+    left: 17%;
+    position: relative;
+    font-weight: 800;
+    border-radius: 10px;
+    background-color: blue;
+    color: #fff;
+    padding: 0px 20px;
+}
+
+#cancel2 {
+    background-color: rgb(172, 172, 172);
+    position: relative;
+    top: 120%;
+    left: 100%;
+    width: 20%;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+#login01 {
+    width: 20%;
+    height: 10%;
+    position: relative;
+    bottom: -10%;
+    right: -13%;
+    border-radius: 5px;
+    background-color: rgb(219, 219, 219);
+}
+
+
+#h1 {
+    font-size: 30px;
+    margin: 43px 140px;
+    position: absolute;
+    opacity: 1;
+}
+
+#P1 {
+    font-size: 45px;
+    color: rgb(226, 158, 12);
+    margin: 28px 188px;
+    position: absolute;
+    opacity: 1;
+}
+
+#h2 {
+    position: absolute;
+    font-size: 50px;
+    margin: 135px;
+    top: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: 1;
+}
+
+#aa {
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    left: 11%;
+    top: 50%;
+}
+
+#h3 {
+    font-size: 18px;
+    position: absolute;
+    text-align: center;
+    position: relative;
+    opacity: 1;
+}
+
+#h3::before {
+    content: "";
+    left: 0;
+    top: 50%;
+    width: 70px;
+    height: 2px;
+    background: black;
+    display: block;
+    position: absolute;
+}
+
+#p2 {
+    position: absolute;
+    top: 13%;
+    opacity: 1;
+}
+
+#button01 {
+    top: 40%;
+    position: absolute;
+    background-color: blue;
+    border: none;
+    color: aliceblue;
+    padding: 8px 8px;
+    border-radius: 10px;
+    font-size: 0;
+    opacity: 0;
+}
+
+#one {
+    position: absolute;
+    right: 10%;
+    border: none;
+    color: black;
+    background-color: aliceblue;
+    top: 9%;
+    opacity: 1;
+}
+
+#two {
+    position: absolute;
+    top: 7%;
+    border: 1px solid rgb(93, 84, 84);
+    padding: 9px 9px;
+    border-radius: 5px;
+    right: 3%;
+    opacity: 1;
+}
+
+#bb {
+
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    height: 60%;
+    position: absolute;
+    background-position: center;
+    border-radius: 4px;
+    right: 4%;
+    filter: drop-shadow(10px 10px 6px rgb(36, 35, 35));
+    top: 20%;
+
+}
+
+#bb2 {
+    height: 100%;
+    width: 50%;
+    background-position: center;
+    background-size: 360px;
+    left: 28%;
+    position: absolute;
+    background-image: url(image02.png);
+    filter: drop-shadow(10px 10px 5px rgb(36, 35, 35));
+}
+
+#cc {
+    width: 100%;
+    height: 18%;
+    bottom: 0%;
+    position: absolute;
+}
+
+#cc01 {
+    width: 4%;
+    height: 65%;
+    top: 5%;
+    left: 11%;
+    position: absolute;
+    border-radius: 50%;
+    background-image: url(image01.png);
+    background-size: 195px;
+    background-position: center;
+    transform: rotate(-35deg);
+    filter: drop-shadow(10px 10px 9px rgb(36, 35, 35));
+}
+
+#cch {
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    top: 16%;
+    left: 17%;
+    position: absolute;
+    border-bottom: 2px solid rgb(4, 4, 4);
+}
+
+#cc02 {
+    right: 6%;
+    position: absolute;
+    width: 70%;
+    height: 100%;
+}
+
+#dd {
+    position: relative;
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    left: 20%;
+}
+
+#h001 {
+    font-size: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    opacity: .4;
+}
+
+#ee {
+    border-radius: 50%;
+    background: linear-gradient(to right bottom, rgb(245, 93, 118) 30%, white);
+    width: 20%;
+    height: 26%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+
+}
+
+#dd01 {
+    position: relative;
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    left: 40%;
+}
+
+#h002 {
+    font-size: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    opacity: .4;
+}
+
+#h002::before {
+    content: "";
+    left: -50px;
+    top: -420%;
+    width: 2px;
+    height: 70px;
+    background: rgb(142, 140, 140);
+    display: block;
+    position: absolute;
+
+}
+
+#ee01 {
+    border-radius: 50%;
+    background: linear-gradient(to right bottom, rgb(0, 187, 255) 30%, white);
+    width: 20%;
+    height: 26%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+#dd02 {
+    position: relative;
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    left: 60%;
+}
+
+#h003 {
+    font-size: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    opacity: .4;
+}
+
+#h003::before {
+    content: "";
+    left: -50px;
+    top: -200%;
+    width: 2px;
+    height: 70px;
+    background: rgb(142, 140, 140);
+    display: block;
+    position: absolute;
+}
+
+
+#ee02 {
+    border-radius: 50%;
+    background: linear-gradient(to right bottom, rgb(217, 255, 0) 20%, white);
+    width: 20%;
+    height: 26%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+
+}
+
+#div01 {
+    width: 80%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    filter: blur(0px);
+}
+
+#div02 {
+    height: 10%;
+    position: relative;
+    width: 48%;
+    left: 35%;
+    top: 4%;
+}
+
+.ui ul li {
+    padding: 30px;
+    display: inline-block;
+    color: #000000;
+    display: flex;
+    list-style: none;
+    display: inline-block;
+    margin: 0px, 8px;
+
+
+}
+
+.ui ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.4, all;
+}
+
+.ui ul li a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.hover-line::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 0, 0);
+    transition: width .4;
+}
+
+.hover-line:hover::after {
+    width: 100%;
+    transition: width.3s;
+}
